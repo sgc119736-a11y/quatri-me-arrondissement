@@ -1,0 +1,56 @@
+!<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Leçon de Français</title>
+  <link rel="stylesheet" href="style2.css">
+</head>
+
+<body>
+  <header>
+    <h1>Bienvenue au Musée du Français</h1>
+    <div class="top-buttons">
+      <button id="lang-toggle" class="lang-btn">EN</button>
+      <button id="prevPageBtn">← Page Précédente</button>
+    </div>
+    
+  </header>
+
+  <main>
+    <section class="text-side">
+      <h2>Une cathédrale faite d'histoire</h2>
+      <p>f paragraph 1</p>
+      <p>f paragraph 2</p>
+      <p>f paragraph 3</p>
+      <p>f paragraph 4</p>
+    </section>
+
+    <section class="image-side">
+      <img id="mainImage" src="images/img4.jpg" alt="Image principale" class="main-image">
+      <div class="thumbnails">
+        <img class="thumb" src="images/img5.jpg" alt="Miniature 2">
+        <img class="thumb" src="images/img6.jpg" alt="Miniature 3">
+      </div>
+      <p class="caption">Cliquez sur une miniature pour la mettre en grand</p>
+    </section>
+  </main>
+
+  <section id="map-frame">
+    <h3>📍 Carte du Site — L'Hôtel de ville</h3>
+    <div id="map-container">
+      <iframe
+        src="https://www.google.com/maps/embed/v1/place?key=YOUR_API_KEY&q=Hôtel+de+Ville,Paris,France"
+        width="100%"
+        height="300"
+        style="border:0;"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+  </section>
+
+  <script src="script2.js"></script>
+</body>
+</html>

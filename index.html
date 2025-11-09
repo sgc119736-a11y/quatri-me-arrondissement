@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Leçon de Français</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <h1>Bienvenue </h1>
+    <div class="top-buttons">
+      <button id="lang-toggle" class="lang-btn">EN</button>
+      <button id="nextPageBtn">Page Suivante →</button>
+    </div>
+    
+  </header>
+
+  <main>
+    <section class="text-side">
+      <h2>Une cathédrale faite d'histoire</h2>
+      <p>f paragraph 1</p>
+      <p>f paragraph 2</p>
+      <p>f paragraph 3</p>
+      <p>f paragraph 4</p>
+    </section>
+
+    <section class="image-side">
+      <img id="mainImage" src="images/img1.jpg" alt="Image principale" class="main-image">
+      <div class="thumbnails">
+        <img class="thumb" src="images/img2.jpg" alt="Miniature 2">
+        <img class="thumb" src="images/img3.jpg" alt="Miniature 3">
+      </div>
+      <p class="caption">Cliquez sur une miniature pour la mettre en grand</p>
+    </section>
+  </main>
+
+  <section id="map-frame">
+    <h3>📍 Carte du Site — Cathédrale Notre-Dame de Paris</h3>
+    <div id="map-container">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.999484469095!2d2.347711515674549!3d48.85296807928771!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e671e1c3cb1c71%3A0xe1c8b469b85f1b28!2sCath%C3%A9drale%20Notre-Dame%20de%20Paris!5e0!3m2!1sen!2sfr!4v1681328123456!5m2!1sen!2sfr"
+        width="100%"
+        height="300"
+        style="border:0;"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>

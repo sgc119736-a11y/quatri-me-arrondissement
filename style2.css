@@ -1,0 +1,141 @@
+body {
+  font-family: "Georgia", serif;
+  background-color: #f9f4e7;
+  color: #3e2f1c;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header {
+  background-color: #e4d4b7;
+  border-bottom: 3px solid #b8a36f;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+#prevPageBtn {
+  background-color: #b8a36f;
+  border: none;
+  padding: 0.6rem 1rem;
+  font-size: 1rem;
+  color: #fff;
+  border-radius: 9px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+#prevPageBtn:hover {
+  background-color: #9b8654;
+}
+
+main {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
+  flex-wrap: wrap;
+}
+
+.text-side {
+  flex: 1;
+  min-width: 250px;
+  padding-right: 2rem;
+}
+
+.image-side {
+  flex: 1;
+  min-width: 250px;
+  text-align: center;
+}
+
+.main-image {
+  width: 80%;
+  border: 5px solid #d7c49e;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 10px;
+  transition: opacity 0.3s ease;
+}
+
+.thumbnails {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 5px;
+}
+
+.thumb {
+  width: 80px;
+  border: 3px solid #d7c49e;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.2s ease, opacity 0.3s ease;
+}
+
+.thumb:hover {
+  transform: scale(1.1);
+  opacity: 0.8;
+}
+
+.caption {
+  font-style: italic;
+  color: #5c4a2e;
+}
+
+#map-frame {
+  margin-top: auto;
+  background-color: #f1e5c6;
+  border-top: 4px solid #b8a36f;
+  border-bottom: 4px solid #b8a36f;
+  padding: 1rem 2rem;
+  text-align: center;
+}
+
+#map-frame h3 {
+  margin-top: 0;
+  font-weight: bold;
+  color: #3e2f1c;
+  font-size: 1.2rem;
+  text-decoration: underline;
+}
+
+#map-container {
+  border: 6px double #b8a36f;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.lang-btn {
+  background-color: #b8a36f;
+  color: white;
+  border: none;
+  border-radius: 9px;
+  padding: 8px 14px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s;
+  z-index: 9999;
+}
+
+.lang-btn:hover {
+  background-color: #9b8654;
+}
+
+.top-buttons {
+  position: fixed;
+  top: 13px;
+  right: 20px;
+  display: flex;
+  gap: 10px;
+}
